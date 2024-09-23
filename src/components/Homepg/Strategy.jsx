@@ -6,7 +6,7 @@ const Strategy = () => {
       Comprehensive Solutions from Planning to Analysis
       </h2>
       <div className="w-[90%] mx-auto grid md:grid-cols-3 gap-12 text-left">
-        <div className="flex flex-col p-6 rounded-lg">
+        <div className="flex flex-col p-6 rounded-lg border border-black hover:shadow-2xl">
           <div className="flex flex-col items-center justify-center gap-3">
             <img
               src="https://ik.imagekit.io/varsh0506/Internship/budget.png?updatedAt=1727034847785"
@@ -20,7 +20,7 @@ const Strategy = () => {
           Allocate your influencer marketing budget wisely. Discover influencer costs, assess their value, and predict your potential reach to make informed financial choices for your campaigns.
           </p>
         </div>
-        <div className="flex flex-col p-6 rounded-lg">
+        <div className="flex flex-col p-6 rounded-lg border border-black hover:shadow-2xl">
           <div className="flex flex-col items-center justify-center gap-3">
             <img
               src="https://ik.imagekit.io/varsh0506/Internship/fast.png?updatedAt=1727034881956"
@@ -35,7 +35,7 @@ const Strategy = () => {
           Boost your campaign ROI by identifying the ideal influencers for your brand and target audience. Strategically plan and execute your next campaign using actionable performance metrics.
           </p>
         </div>
-        <div className="flex flex-col p-6 rounded-lg">
+        <div className="flex flex-col p-6 rounded-lg border border-black hover:shadow-2xl">
           <div className="flex flex-col items-center justify-center gap-3">
             <img
               src="https://ik.imagekit.io/varsh0506/Internship/optimization.png?updatedAt=1727034951067"
