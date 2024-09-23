@@ -1,4 +1,5 @@
 //import Header from "./Header";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -27,7 +28,7 @@ const Navbar = () => {
           </div>
           <div className="mt-5 space-y-5">
             <div className="flex justify-between border-b border-gray-500">
-              <div>For Brands</div>
+              <div><Link to="brand">For Brands</Link></div>
               <div>
                 <button>
                   <span className="material-symbols-outlined">
@@ -37,7 +38,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex justify-between border-b border-gray-500">
-              <div>For Agencies</div>
+              <div><Link to="agencies">For Agencies</Link></div>
               <div>
                 <button>
                   <span className="material-symbols-outlined">
@@ -67,7 +68,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex justify-between border-b border-gray-500">
-              <div>Pricing</div>
+              <div><Link to="pricing">Pricing</Link></div>
               <div>
                 <button>
                   <span className="material-symbols-outlined">
