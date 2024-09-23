@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@-webkit-keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-180deg);
+              transform: rotateX(-180deg);
+    }
+  }
+
+  input{
+    background: transparent;
+    
+  }
+ 
+input:focus{
+outline: none;
+}
+
+/*#hero{
+   background-image: url("./assests/beige-soft-gradient-background-vintage-style_53876-117408.avif");
+   background-repeat: no-repeat;
+   background-size: cover;
+}*/
+
+#sections,#bench{
+    box-shadow: 
+    0 0 0 10px hsl(225, 100%, 75%), 
+    0 0 0 15px hsl(225, 100%, 80%),
+    0 0 0 20px hsl(225, 100%, 85%),
+    0 0 0 25px hsl(225, 100%, 90%),
+    0 0 0 30px hsl(225, 100%, 95%);
+
+
+}
+
+.flip-horizontal-bottom {
+	-webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
