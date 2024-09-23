@@ -3,9 +3,9 @@
 const Navbar = () => {
   return (
     <>
-    <div className="hidden mx-auto 2xl:container bg-black text-white" id="headermd">
+    <div className="hidden mx-auto 2xl:container bg-black text-white fixed w-[100%]" id="headermd">
         <div className="mx-auto w-[97%] md:w-[90%] grid grid-cols-1 ">
-          <div className="flex justify-between my-2">
+          <div className="flex justify-between my-10">
             <div>
               <h2 className="text-3xl font-bold">BigLinkz</h2>
             </div>
