@@ -5,8 +5,9 @@ import Homepg from "./components/Homepg/Homepg";
 import Agencies from "./components/Agencies/Agencies";
 import Brands from "./components/Brands/Brands";
 import Pricing from "./components/Pricing/Pricing";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+//import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Footer from "./components/Footer";
+import { HashRouter, Route, Routes ,Outlet} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,30 +20,16 @@ const Index = () => {
     </>
   );
 };
-const Router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Index />,
-    children: [
-      {
-        element: <Homepg />,
-        path: "/",
-      },
-      {
-        element: <Brands />,
-        path: "brand",
-      },
-      {
-        element: <Agencies />,
-        path: "agencies",
-      },
-      {
-        element: <Pricing />,
-        path: "pricing",
-      },
-    ],
-  },
-]);
 
-root.render(<RouterProvider router={Router} />);
-//root.render(<Index/>)
+root.render(
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<Index />}>
+        <Route index element={<Homepg />} />
+        <Route path="brand" element={<Brands />} />
+        <Route path="agencies" element={<Agencies />} />
+        <Route path="pricing" element={<Pricing />} />
+      </Route>
+    </Routes>
+  </HashRouter>
+);
