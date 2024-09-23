@@ -2,9 +2,10 @@
 import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { useState } from "react";
+import Navbar from "./Navbar";
 
 const Header = () => {
-  const [isVisible, setIsVisible] = useState(false);  
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
@@ -13,7 +14,7 @@ const Header = () => {
   return (
     <>
       <div
-        className="mx-auto flex justify-around p-4 items-center bg-black text-white "
+        className="mx-auto flex justify-around p-4 items-center bg-black text-white w-[100%]"
         id="main-head"
       >
         <div className="hover:text-[#5151d6]">
@@ -75,9 +76,12 @@ const Header = () => {
           >
             <span className="material-symbols-outlined">menu_open</span>
           </button>
+          
         </div>
+       
       </div>
-      <div className="mx-20">{isVisible && <Dropdown/>}</div>  
+      <div className="mx-20">{isVisible && <Dropdown />}</div>
+      <Navbar/>
     </>
   );
 };

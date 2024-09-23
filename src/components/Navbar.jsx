@@ -3,7 +3,7 @@
 const Navbar = () => {
   return (
     <>
-    <div className="hidden mx-auto 2xl:container" id="headermd">
+    <div className="hidden mx-auto 2xl:container bg-black text-white" id="headermd">
         <div className="mx-auto w-[97%] md:w-[90%] grid grid-cols-1 ">
           <div className="flex justify-between my-2">
             <div>
@@ -19,8 +19,7 @@ const Navbar = () => {
                   }}>
                 <span
                   className="material-symbols-outlined"
-                  
-                >
+              >
                   close
                 </span>
               </button>
@@ -51,7 +50,7 @@ const Navbar = () => {
               <div>Product</div>
               <div>
                 <button>
-                  <span className="text-orange-600 material-symbols-outlined ">
+                  <span className="text-[#5151d6] material-symbols-outlined ">
                     keyboard_arrow_down
                   </span>
                 </button>
@@ -61,7 +60,7 @@ const Navbar = () => {
               <div>Resources</div>
               <div>
                 <button>
-                  <span className="text-orange-600 material-symbols-outlined ">
+                  <span className="text-[#5151d6] material-symbols-outlined ">
                     keyboard_arrow_down
                   </span>
                 </button>
@@ -78,8 +77,8 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center mt-40">
-            <button className="flex items-center justify-center p-3 px-10 font-bold text-white bg-orange-500 border border-red-500 rounded-xl hover:shadow-orange-100 hover:shadow-xl">
+          <div className="flex items-center justify-center my-40">
+            <button className="flex items-center justify-center p-3 px-10 font-bold text-white bg-[#5151d6] border rounded-xl hover:bg-[#3f3fa8]">
               Request a Demo
               <span className="material-symbols-outlined">north_east</span>
             </button>

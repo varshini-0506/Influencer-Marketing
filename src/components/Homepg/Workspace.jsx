@@ -19,7 +19,7 @@ const Workspace = () => {
             <span className="material-symbols-outlined">arrow_outward</span>
           </button>
         </div>
-        <div className="grid grid-cols-1 mt-5 md:grid-cols-2 gap-x-7">
+        <div className="grid grid-cols-1 mt-5 md:grid-cols-2 gap-7">
           <div className="flex border border-gray-600 hover:shadow-2xl rounded-3xl hover:border-gray-600 hover:drop-shadow-xl">
             <button className="m-6">
               <div className="flex flex-col">

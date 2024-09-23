@@ -14,7 +14,7 @@ const Working = () => {
       <h1 className="text-4xl font-semibold text-center">
         How Biglinkz Works: Simplifying Influencer Marketing
       </h1>
-      <div className="flex gap-20 justify-center items-center mt-10">
+      <div className="flex md:gap-20 justify-center items-center mt-10 gap-4">
         <div>
           <button
             className="border font-semibold p-3 border-[#605FFC] rounded-xl focus:text-white focus:bg-[#605FFC]"
