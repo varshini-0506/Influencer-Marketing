@@ -67,12 +67,12 @@ const Section = ({content}) => {
         className="w-[80%] rounded-xl mx-auto grid grid-cols-2 p-4 border border-[#605FFC] my-16"
         id="sections"
       >
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-start ">
           <div className="space-y-5">
-            <h2 className="text-3xl font-semibold text-center">
+            <h2 className="text-3xl font-semibold text-left">
               {content.heading}
             </h2>
-            <p className="text-center text-gray-500">{content.data}</p>
+            <p className="text-left text-gray-500">{content.data}</p>
           </div>
         </div>
         <div>
