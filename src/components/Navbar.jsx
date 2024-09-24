@@ -38,7 +38,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex justify-between border-b border-gray-500">
-              <div><Link to="agencies">For Agencies</Link></div>
+              <div><Link to="influencers">For Influencers</Link></div>
               <div>
                 <button>
                   <span className="material-symbols-outlined">

@@ -60,7 +60,7 @@ const Header = () => {
             Login
             <span className="material-symbols-outlined">north_east</span>
           </button>
-          <button className="flex items-center justify-center p-3 px-10 font-bold text-white bg-[#5151d6] hover:bg-[#3f3fa8] rounded-xl">
+          <button className="flex items-center justify-center p-3 px-10 font-bold text-white bg-[#5151d6] hover:bg-[#3f3fa8][#3f3fa8] rounded-xl">
             Book a Demo
             <span className="material-symbols-outlined">north_east</span>
           </button>
