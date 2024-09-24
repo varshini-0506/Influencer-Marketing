@@ -29,7 +29,7 @@ const Header = () => {
               <Link to="brand">For Brands</Link>
             </li>
             <li className="hover:text-[#5151d6]">
-              <Link to="agencies">For Agencies</Link>
+              <Link to="influencers">For Influencers</Link>
             </li>
             <li className="hover:text-[#5151d6]">
               <button
