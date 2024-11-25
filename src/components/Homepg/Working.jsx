@@ -1,82 +1,137 @@
-//import React from 'react'
 import { useState } from "react";
 
 const Working = () => {
-  const [content, setContent] = useState({
-    heading: "Design Targeted Campaigns to Elevate Your Brand",
-    data: "Start by creating customized campaigns that align with your brand’s goals. Whether you’re aiming for product awareness, audience engagement, or conversions, Biglinkz provides easy-to-use tools to tailor your campaign objectives, select preferred demographics, and set a budget—all in just a few clicks.",
-    image:
-      "https://ik.imagekit.io/varsh0506/Internship/organic-flat-people-business-training-illustration.png?updatedAt=1726996141689",
-  });
+
+  const [selectedButton, setSelectedButton] = useState(1);
+
+  const handleButtonClick = (buttonIndex) => {
+    
+    if (buttonIndex === selectedButton) {
+      return;
+    }
+    setSelectedButton(buttonIndex);
+  };
 
   return (
-    <div className="mt-10">
-      <h1 className="text-4xl font-semibold text-center">
-        How Biglinkz Works: Simplifying Influencer Marketing
-      </h1>
-      <div className="flex md:gap-20 justify-center items-center mt-10 gap-4">
-        <div>
-          <button
-            className="border font-semibold p-3 border-[#605FFC] rounded-xl focus:text-white focus:bg-[#605FFC]"
-            onClick={() => {
-              setContent({
-                heading: "Design Targeted Campaigns to Elevate Your Brand",
-                data: "Start by creating customized campaigns that align with your brand’s goals. Whether you’re aiming for product awareness, audience engagement, or conversions, Biglinkz provides easy-to-use tools to tailor your campaign objectives, select preferred demographics, and set a budget—all in just a few clicks.",
-                image:
-                  "https://ik.imagekit.io/varsh0506/Internship/organic-flat-people-business-training-illustration.png?updatedAt=1726996141689",
-              });
-            }}
-          >
-            Create Campaigns
-          </button>
-        </div>
-        <div>
-          <button className="border font-semibold border-[#605FFC] p-3 rounded-xl focus:text-white focus:bg-[#605FFC]" onClick={() => {
-              setContent({
-                heading: "Discover the Right Influencers for Your Brand",
-                data: "Biglinkz helps you connect with influencers who resonate with your target audience. Use advanced filters like niche, audience size, location, and engagement rate to find influencers who align perfectly with your brand values and campaign goals, ensuring an authentic and effective promotion.",
-                image:
-                  "https://ik.imagekit.io/varsh0506/Internship/search-concept-landing-page.png?updatedAt=1726996141758",
-              });
-            }}>
-            Find Influencers
-          </button>
-        </div>
-        <div>
-          <button className="border font-semibold border-[#605FFC] p-3 rounded-xl focus:text-white focus:bg-[#605FFC]" onClick={() => {
-              setContent({
-                heading: "Manage Collaborations and Monitor Results in Real-Time",
-                data: "Once your campaign is live, Biglinkz makes collaboration easy by facilitating communication and content approval. Monitor your campaign’s performance with real-time analytics, track engagement, conversions, and ROI, and make informed decisions for optimizing future campaigns.",
-                image:
-                  "https://ik.imagekit.io/varsh0506/Internship/Data_report-pana-removebg-preview.png?updatedAt=1726996153162",
-              });
-            }}>
-            Collaborate and Track
-          </button>
-        </div>
+    <div className="2xl:container mx-auto mt-10">
+      <div className="flex justify-center items-center">
+        <h1 className="text-center font-bold text-4xl w-[90%]">
+          What Makes Us Unique: Key Features
+        </h1>
       </div>
-      <Section content={content} />
-    </div>
-  );
-};
 
-const Section = ({content}) => {
-  return (
-    <div className="2xl:container mx-auto flip-horizontal-bottom">
-      <div
-        className="w-[80%] rounded-xl mx-auto grid grid-cols-2 p-4 border border-[#605FFC] my-16"
-        id="sections"
-      >
-        <div className="flex items-center justify-start ">
-          <div className="space-y-5">
-            <h2 className="text-3xl font-semibold text-left">
-              {content.heading}
-            </h2>
-            <p className="text-left text-gray-500">{content.data}</p>
+      <div className="grid md:grid-cols-2 grid-cols-1  p-4 w-[80%] mx-auto mt-20 gap-10">
+        <div className="space-y-4">
+          {/* Button 1 */}
+          <div className="space-y-2">
+            <button
+              className={`font-semibold text-2xl focus:bg-[#3f3fa8] focus:shadow-xl focus:shadow-[#3f3fa8] bg-[#5151d6] text-white p-2 rounded transition-transform duration-300 hover:scale-105 w-[100%] mb-8 ${
+                selectedButton === 1 ? "bg-[#3f3fa8] shadow-xl" : ""
+              }`}
+              onClick={() => handleButtonClick(1)}
+            >
+              <div className="flex gap-3 justify-center items-center">
+              <span className="material-symbols-outlined">groups</span> Discover
+              Your Ideal Influencers
+              </div>
+            </button>
+            {/* Smooth sliding transition */}
+            <div
+              className={`transition-[max-height] duration-500 ease-in-out overflow-hidden ${
+                selectedButton === 1 ? "max-h-60" : "max-h-0"
+              }`}
+            >
+              <p className="p-2 text-xl">
+                Unlock a world of possibilities by easily finding influencers
+                who resonate with your brand’s values and target audience.
+                Simply input your campaign requirements, and Biglinkz will
+                generate a curated list tailored to your specific needs.
+              </p>
+            </div>
+          </div>
+
+          {/* Button 2 */}
+          <div className="space-y-2 ">
+            <button
+              className={`font-semibold text-2xl w-[100%] mb-8 focus:bg-[#3f3fa8] focus:shadow-xl focus:shadow-[#3f3fa8] bg-[#5151d6] text-white p-2 rounded transition-transform duration-300 hover:scale-105 ${
+                selectedButton === 2 ? "bg-[#3f3fa8] shadow-xl" : ""
+              }`}
+              onClick={() => handleButtonClick(2)}
+            >
+              <div className="flex gap-3 justify-center items-center">
+              <span className="material-symbols-outlined">paid</span>Automate
+              Your Budgeting
+              </div>
+            </button>
+            <div
+              className={`transition-[max-height] duration-500 ease-in-out overflow-hidden ${
+                selectedButton === 2 ? "max-h-60" : "max-h-0"
+              }`}
+            >
+              <p className="p-2 text-xl">
+                Say goodbye to tedious manual calculations! Biglinkz
+                automatically computes a standardized budget based on each
+                selected influencer's follower rates and engagement metrics.
+                This ensures you stay within budget while maximizing campaign
+                effectiveness.
+              </p>
+            </div>
+          </div>
+
+          {/* Button 3 */}
+          <div className="space-y-2">
+            <button
+              className={`font-semibold text-2xl w-[100%] mb-8 focus:bg-[#3f3fa8] focus:shadow-xl focus:shadow-[#3f3fa8] bg-[#5151d6] text-white p-2 rounded transition-transform duration-300 hover:scale-105 ${
+                selectedButton === 3 ? "bg-[#3f3fa8] shadow-xl" : ""
+              }`}
+              onClick={() => handleButtonClick(3)}
+            >
+              <div className="flex gap-3 justify-center items-center">
+              <span className="material-symbols-outlined">forum</span>
+              Effortlessly Manage Outreach
+              </div>
+            </button>
+            <div
+              className={`transition-[max-height] duration-500 ease-in-out overflow-hidden ${
+                selectedButton === 3 ? "max-h-60" : "max-h-0"
+              }`}
+            >
+              <p className="p-2 text-xl">
+                Streamline your outreach efforts with Biglinkz! After selecting
+                your influencers, our platform automates the process of sending
+                personalized direct messages. This saves you time and ensures
+                that your outreach is consistent and efficient.
+              </p>
+            </div>
           </div>
         </div>
-        <div>
-          <img src={content.image} className="w-[400px] h-[400px]"/>
+
+        {/* Second Grid - Image */}
+        <div className="md:flex justify-center items-center hidden">
+          {selectedButton === 1 && (
+            <video width="500" height="500" autoPlay loop muted className="slit-in-vertical">
+              <source
+                src="https://ik.imagekit.io/varsh0506/Internship/White%20Simple%20New%20Arrival%20Month%20Collection%20Shop%20Now%20Instagram%20Post.mp4?updatedAt=1727202885205"
+                type="video/mp4"
+              />
+            </video>
+          )}
+          {selectedButton === 2 && (
+            <video width="500" height="500" autoPlay loop muted className="slit-in-vertical h-[500px] mb-10">
+            <source
+              src="https://ik.imagekit.io/zcdsz07ad/BigLinkz/Untitled%20design%20(1).mp4?updatedAt=1727674309897"
+              type="video/mp4"
+            />
+          </video>
+          )}
+          {selectedButton === 3 && (
+            <video width="500" height="500" autoPlay loop muted className="slit-in-vertical h-[500px] mb-10">
+            <source
+              src="https://ik.imagekit.io/zcdsz07ad/BigLinkz/Untitled%20design%20(2).mp4?updatedAt=1727674371179"
+              type="video/mp4"
+            />
+          </video>
+          )}
         </div>
       </div>
     </div>

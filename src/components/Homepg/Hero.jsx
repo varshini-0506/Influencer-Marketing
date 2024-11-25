@@ -16,12 +16,12 @@ export const Hero = () => {
       </div>
       <div className="flex items-center justify-center">
         <h1 className="text-5xl leading-[70px] font-bold text-center w-[70%]">
-        Unleash the Power of <span className="text-[#5151d6]">Influencer Marketing:</span> Elevate Your Brand, Amplify Your Reach
+        Automate Your <span className="text-[#5151d6]">Influencer Marketing:</span> From Influencer Selection to Budget Calculation and Outreach
         </h1>
       </div>
       <div className="flex items-center justify-center">
-        <p className="text-center w-[70%] ">
-        Biglinkz empowers brands to connect with influencers, creating authentic campaigns that boost visibility and drive engagement. Elevate your brand’s presence and reach new audiences through seamless collaboration and impactful marketing.
+        <p className="text-center w-[70%] text-lg">
+        With Biglinkz, automate influencer-brand collaborations, streamline outreach, and manage campaigns effortlessly. Focus on creating while we handle the connections, budget calculations, and performance tracking for maximum reach and results.
         </p>
       </div>
       <div className="md:flex items-start justify-between p-3 border border-white rounded-xl w-[60%] hidden text-black">
