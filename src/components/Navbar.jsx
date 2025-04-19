@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="mx-auto w-[97%] md:w-[90%] grid grid-cols-1 ">
           <div className="flex justify-between my-10">
             <div>
-              <h2 className="text-3xl font-bold">BigLinkz</h2>
+              <h2 className="text-3xl font-bold">Company</h2>
             </div>
             <div>
               <button onClick={() => {
