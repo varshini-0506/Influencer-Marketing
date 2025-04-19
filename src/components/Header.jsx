@@ -19,7 +19,7 @@ const Header = () => {
       >
         <div className="hover:text-[#5151d6]">
           <button className="text-3xl font-bold">
-            <Link to="/">BigLinkz</Link>
+            <Link to="/">Company</Link>
           </button>
         </div>
         <div className="hidden md:flex">

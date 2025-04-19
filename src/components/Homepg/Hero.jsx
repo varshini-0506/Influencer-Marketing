@@ -21,7 +21,7 @@ export const Hero = () => {
       </div>
       <div className="flex items-center justify-center">
         <p className="text-center w-[70%] text-lg">
-        With Biglinkz, automate influencer-brand collaborations, streamline outreach, and manage campaigns effortlessly. Focus on creating while we handle the connections, budget calculations, and performance tracking for maximum reach and results.
+        With Company, automate influencer-brand collaborations, streamline outreach, and manage campaigns effortlessly. Focus on creating while we handle the connections, budget calculations, and performance tracking for maximum reach and results.
         </p>
       </div>
       <div className="md:flex items-start justify-between p-3 border border-white rounded-xl w-[60%] hidden text-black">
