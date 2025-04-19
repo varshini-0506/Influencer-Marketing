@@ -13,7 +13,7 @@ const Bbenchmark = () => {
             </div>
             <div>
               <p className="text-lg text-gray-500 leading-50">
-              With Biglinkz, you can thoroughly evaluate your market standing and gain essential insights into industry trends. This empowers you to make informed decisions that drive growth, enhance your brand's influence, and effectively connect with the right influencers for your campaigns.
+              With Company, you can thoroughly evaluate your market standing and gain essential insights into industry trends. This empowers you to make informed decisions that drive growth, enhance your brand's influence, and effectively connect with the right influencers for your campaigns.
               </p>
             </div>
             <div>
