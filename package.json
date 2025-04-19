@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/varshini-0506/Project.git",
+  "homepage": "https://github.com/varshini-0506/Influencer-Marketing.git",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
