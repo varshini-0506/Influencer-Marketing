@@ -7,10 +7,10 @@ const Footer = () => {
               <div className="text-[#5151d6] p-2 rounded-full">
                 <span className="material-symbols-outlined">search</span>
               </div>
-              <h2 className="font-bold text-xl">BigLinkz</h2>
+              <h2 className="font-bold text-xl">Company</h2>
             </div>
             <p className="mb-6 w-[55%]">
-              BigLinkz is an influencer marketing and intelligence platform that enables superior influencer discovery, quick and easy influencer outreach.
+              Company is an influencer marketing and intelligence platform that enables superior influencer discovery, quick and easy influencer outreach.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-[#5151d6]">
